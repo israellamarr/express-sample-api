@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  main
+    h1= title
+    p #{title}
+    h3 Description
+    p #{description}
+
+    h3 Routes
+    ul
+    each url in urls
+      li
+        a(href=url) #{url}
